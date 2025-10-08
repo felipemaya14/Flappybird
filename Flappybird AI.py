@@ -1,3 +1,10 @@
+# -----------------------------------------------------------------------------
+# Projeto: Flappy Bird in Python, curso BFD Petrópolis
+# Autor: Felipe Maya
+# Copyright (c) 2025 Felipe Maya - todos os direitos reservados
+# https://github.com/felipemaya14 |
+# -----------------------------------------------------------------------------
+
 import pygame
 import os
 import random
