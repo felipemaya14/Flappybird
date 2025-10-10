@@ -298,10 +298,6 @@ def main(genomas, config):
                     """CORREÇÃO: Removido game over automático ao passar o cano, antes gerava loop infinito.
                     game_over(tela, pontos)  # mostra tela de game over
                     main()  # reinicia o jogo"""
-                """ CORREÇÃO: Código do AUGUSTO tem essa seção 2x.
-                if not cano.passou and passaro.x > cano.x:
-                    cano.passou = True
-                    adicionar_cano = True """
 
             cano.mover()
             if cano.x + cano.CANO_TOPO.get_width() < 0:
@@ -336,7 +332,7 @@ def rodar(caminho_config):
         neat.DefaultStagnation,
         caminho_config
         )
-
+    
     populacao = neat.Population(config)
     if ai_jogando:
         populacao.run(main, 50)
